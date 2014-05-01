@@ -18,11 +18,11 @@
  */
 package com.graphhopper.routing.util;
 
-import com.graphhopper.reader.OSMNode;
-import com.graphhopper.reader.OSMWay;
-
 import java.util.HashSet;
 import java.util.Set;
+
+import com.graphhopper.reader.OSMNode;
+import com.graphhopper.reader.OSMWay;
 
 /**
  * @author Peter Karich
@@ -43,7 +43,7 @@ public class FootFlagEncoder extends AbstractFlagEncoder
         {
             "foot", "access"
         };
-        restrictedValues.add("private");
+//        restrictedValues.add("private");
         restrictedValues.add("no");
         restrictedValues.add("restricted");
 
