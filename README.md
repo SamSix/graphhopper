@@ -1,7 +1,7 @@
 # Graphhopper
 
 This is basically a fork of the open source _Graphhopper_.
-To see the version included in the original graphhoper repo, see [README-original.md](https://github.com/SamSix/graphhopper/blob/master/README-original.md).
+To see the version included in the original graphhoper repo, see [README-original.md](https://github.com/SamSix/graphhopper/blob/gradle-upgrade/README-original.md).
 
 For now we only need the core library.
 
