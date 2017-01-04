@@ -1,7 +1,7 @@
 # Graphhopper
 
 This is basically a fork of the open source _Graphhopper_.
-To see the version included in the original graphhoper repo, see [README-original.md](https://raw.githubusercontent.com/SamSix/graphhopper/master/README-original.md).
+To see the version included in the original graphhoper repo, see [README-original.md](https://github.com/SamSix/graphhopper/blob/master/README-original.md).
 
 For now we only need the core library.
 
@@ -39,4 +39,4 @@ If you want to get the lateset changes from the original repo into this repo, ru
 
 For a ton more documentation, and what arguably could have been the readme, see this random document in internal.
 
-See [yet another damned readme.](https://raw.githubusercontent.com/SamSix/internal/master/docs/graphhopper_howto.md)
+See [yet another damned readme.](https://github.com/SamSix/internal/blob/master/docs/graphhopper_howto.md)
