@@ -1,53 +1,42 @@
-# GraphHopper Route Planner
+# Graphhopper
 
-[![Build Status](https://secure.travis-ci.org/graphhopper/graphhopper.png?branch=master)](http://travis-ci.org/graphhopper/graphhopper)
+This is basically a fork of the open source _Graphhopper_.
+To see the version included in the original graphhoper repo, see [README-original.md](https://raw.githubusercontent.com/SamSix/graphhopper/master/README-original.md).
 
-GraphHopper is a fast and memory efficient Java road routing engine released under Apache License 2.0.
-Per default it uses OpenStreetMap data but can import other data sources.
+For now we only need the core library.
 
-GraphHopper for the Web
---------------
+Building:
 
-See GraphHopper in action on [GraphHopper Maps](https://graphhopper.com/maps)
+``` bash
+cd ./core
+./gradlew build
+```
+Publishing:
 
-[![GraphHopper Maps](https://karussell.files.wordpress.com/2014/12/graphhopper-maps-0-4-preview.png)](https://graphhopper.com/maps)
+``` bash
+cd ./core
+./gradlew artifactoryPublish
+```
 
-GraphHopper Maps uses the [Directions API for Business](https://graphhopper.com/#directions-api), which provides 
-routing and matrix routing through GraphHopper and also a fast address search via [Photon](https://github.com/komoot/photon).
-Additionally the map tiles from various Providers like [Lyrk](https://geodienste.lyrk.de/pakete)
-are used and all is available for free and through HTTPS for a secure route planning experience!
-
-
-GraphHopper for Mobile
----------------
-
-There are subprojects to make GraphHopper working offline
-on [Android](https://github.com/graphhopper/graphhopper/tree/master/android)
-and [iOS](http://github.com/graphhopper/graphhopper-ios)
+## Older Documentation
 
 
-Get Started
----------------
+This is a ~ branch ~ fork of the graphhopper repo. We are tracking the original repo by adding a remote repo called upstream.  This was done with the following command (this command  does not need to be run locally, this is just here for informational purposes)...
 
-Read through our [docs](https://github.com/graphhopper/graphhopper/blob/master/docs/index.md), 
-ask questions on [Stackoverflow](http://stackoverflow.com/questions/tagged/graphhopper)
-and sign up to the [mailing list](http://graphhopper.com/#developers).
+```
+git remote add upstream git@github.com:graphhopper/graphhopper.git
+```
 
+### Updating from original
 
-Contribute
----------------
+If you want to get the lateset changes from the original repo into this repo, run the following steps.
 
-Read through [how to contribute](https://github.com/graphhopper/graphhopper/blob/master/CONTRIBUTING.md)
-like finding and fixing bugs and improving our documentation or translations!
+```
+    git fetch upstream
+    git merge upstream/master
+    git push
+```
 
+For a ton more documentation, and what arguably could have been the readme, see this random document in internal.
 
-Features
----------------
-
- * Written in Java
- * Open Source
- * Memory efficient and fast
- * Highly customizable
- * Works on the desktop, as a web service and offline on Android or iOS
- * Large test suite
- * [... more](http://graphhopper.com/#overview)
+See [yet another damned readme.](https://raw.githubusercontent.com/SamSix/internal/master/docs/graphhopper_howto.md)
