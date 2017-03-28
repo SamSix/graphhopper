@@ -17,5 +17,8 @@ public class S6CarFlagEncoder
         // to get to the equipment they need to get to.
         //
         restrictedValues.remove("private");
+
+        // also allow them to drive through gates!
+        setBlockByDefault(false);
     }
 }
