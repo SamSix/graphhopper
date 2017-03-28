@@ -13,6 +13,7 @@ public class NoHighwayFlagEncoder
         super();
         
         restrictedValues.remove("private");
+        setBlockByDefault(false);
     }
     
     
